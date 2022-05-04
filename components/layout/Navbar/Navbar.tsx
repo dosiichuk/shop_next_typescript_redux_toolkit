@@ -1,5 +1,6 @@
-import { Container, Navbar, NavDropdown, Nav } from 'react-bootstrap';
+import { Container, Navbar, NavDropdown, Nav, Button } from 'react-bootstrap';
 import { FaCartPlus, FaPersonBooth } from 'react-icons/fa';
+import Link from 'next/link';
 import styles from './Navbar.module.scss';
 
 const NavbarComponent = () => {
@@ -39,18 +40,18 @@ const NavbarComponent = () => {
               role="group"
               aria-label="button-group"
             >
-              <button type="button" className="btn btn-secondary">
-                <span className="px-2">
+              <Link href="/cart">
+                <span className="px-2 btn btn-primary">
                   <FaCartPlus />
+                  <span className="px-2">Cart</span>
                 </span>
-                Cart
-              </button>
-              <button type="button" className="btn btn-secondary">
-                <span className="px-2">
+              </Link>
+              <Link href="/">
+                <span className="px-2 btn btn-primary">
                   <FaPersonBooth />
+                  <span className="px-2">Account</span>
                 </span>
-                Account
-              </button>
+              </Link>
             </div>
           </Nav>
         </Navbar.Collapse>

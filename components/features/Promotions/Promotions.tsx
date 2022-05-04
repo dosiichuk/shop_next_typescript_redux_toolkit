@@ -4,7 +4,7 @@ const Promotions = () => {
   return (
     <section className="py-5">
       <h2 className="sectionTitle">Check out the hot offers</h2>
-      <div className="row">
+      <div className={'row ' + styles.promotionsContainer}>
         <div className="col-md-6 p-2 position-relative">
           <img
             className={styles.promotionImage}

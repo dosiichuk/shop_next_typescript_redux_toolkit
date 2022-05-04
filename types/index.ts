@@ -9,3 +9,5 @@ export type Product = {
 export type Cart = {};
 
 export type User = {};
+
+export type Review = {};
