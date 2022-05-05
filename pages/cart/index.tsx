@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Container } from 'react-bootstrap';
 
-import Cart from '../components/features/Cart/Cart';
+import Cart from '../../components/features/Cart/Cart';
 
 const CartPage: NextPage = () => {
   return (

@@ -1,6 +1,8 @@
-import { Card, ListGroup } from 'react-bootstrap';
+import Link from 'next/link';
+import { Button, Card, ListGroup } from 'react-bootstrap';
 import CartItem from '../../common/CartItem/CartItem';
 import Filter from '../Filter/Filter';
+import OrderSummary from '../OrderSummary/OrderSummary';
 
 import styles from './Cart.module.scss';
 
@@ -26,6 +28,10 @@ const Cart = () => {
             <CartItem />
             <CartItem />
           </ListGroup>
+          <OrderSummary />
+          <Link href="/cart/checkout">
+            <span className="btn">Proceed to checkout</span>
+          </Link>
         </Card>
       </div>
     </div>
